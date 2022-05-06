@@ -1,0 +1,63 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundleName": "gui"
+	"i18n.keyPrefix": "MainWindowUi"
+	contentType: "form/swing"
+	root: new FormRoot {
+		auxiliary() {
+			"JavaCodeGenerator.defaultVariableGetter": true
+		}
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) {
+			"hgap": 5
+			"vgap": 5
+		} ) {
+			name: "this"
+			"alwaysOnTop": true
+			"$sizePolicy": 2
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panelGame"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.VerticalLayout ) {
+				"gap": 10
+			} ) {
+				name: "panelOperation"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buttonPlay"
+					"text": new FormMessage( null, "MainWindowUi.buttonPlay.text" )
+					"focusable": false
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buttonPre"
+					"text": new FormMessage( null, "MainWindowUi.buttonPre.text" )
+					"enabled": false
+					"focusable": false
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buttonNext"
+					"text": new FormMessage( null, "MainWindowUi.buttonNext.text" )
+					"enabled": false
+					"focusable": false
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buttonPlayMusic"
+					"text": new FormMessage( null, "MainWindowUi.buttonPlayMusic.text" )
+					"focusable": false
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buttonExit"
+					"text": new FormMessage( null, "MainWindowUi.buttonExit.text" )
+					"focusable": false
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "East"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 790, 420 )
+		} )
+	}
+}
